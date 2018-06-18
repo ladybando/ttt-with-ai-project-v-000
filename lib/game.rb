@@ -46,7 +46,6 @@ input = gets.chomp
             board = Board.new
             game = Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"))
             100.times.collect { play }
-            binding.pry
             puts "The game was won #{play.length.won?} times."
           else
             start
